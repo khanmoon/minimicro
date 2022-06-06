@@ -1,12 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import PostCreate from './PostCreate';
 
-function App() {
-  return (
-    <div>
-      <h1>Mansoor</h1>
+export default ()=>{
+    return <div className='container'>
+        <h1>Create a Post</h1>
+        <PostCreate />
     </div>
-  );
 }
-
-export default App;
