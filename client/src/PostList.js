@@ -6,7 +6,7 @@ import CommentList from "./CommentList";
 export default ()=>{
     const [posts, setPosts] = useState({});
     async function fetchPosts(){
-        const response = await axios.get('https://khanmoon-minimicro-54q656vvfp65v-4000.githubpreview.dev');
+        const response = await axios.get('https://khanmoon-minimicro-54q656vvfp65v-4002.githubpreview.dev/posts');
         setPosts(response.data);
     }
     useEffect(()=>{
@@ -21,7 +21,7 @@ export default ()=>{
             >
                 <div className="card-body">
                     <h3>{post.title}</h3>
-                    <CommentList postId={post.id}/>
+                    <CommentList comments={post.comments}/>
                     <CommentCreate postId={post.id}/>
                 </div>
             </div>

@@ -10,7 +10,7 @@ app.post('/events',async(req,res)=>{
     const event = req.body;
     await axios.post("https://khanmoon-minimicro-54q656vvfp65v-4000.githubpreview.dev/events",event);
     await axios.post("https://khanmoon-minimicro-54q656vvfp65v-4001.githubpreview.dev/events",event);
-    // axios.post("https://khanmoon-minimicro-54q656vvfp65v-4002.githubpreview.dev/events",event);
+    axios.post("https://khanmoon-minimicro-54q656vvfp65v-4002.githubpreview.dev/events",event);
     console.log(req.body)
     res.send({status:"ok"});
 
